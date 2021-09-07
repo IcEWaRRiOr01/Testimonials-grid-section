@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        .wrapper {
+            display: grid;
+            column-count: 4;
+            gap: 1rem;
+            grid-template-columns: repeat(10, 1fr);
+            grid-template-areas: 
+                'a a b c'
+                'd e e c';
+        }
+
+        .card {
+            /* width: 10rem; */
+            /* height: 10rem; */
+            padding: 10rem;
+            border: 3px solid black;
+        }
+
+        .red {
+            background: red;
+            grid-area: a;
+        }
+
+        .green {
+            background: green;
+            grid-area: b;
+        }
+
+        .blue {
+            background: blue;
+            grid-area: c;
+        }
+
+        .yellow {
+            background: darkorange;
+            grid-area: d;
+        }
+
+        .purple {
+            background: purple;
+            grid-area: e;
+        }
+
+    </style>
+    <title>Example</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="card red">a</div>
+        <div class="card green">b</div>
+        <div class="card blue">c</div>
+        <div class="card yellow">d</div>
+        <div class="card purple">e</div>
+    </div>
+    
+</body>
+</html>
